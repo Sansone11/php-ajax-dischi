@@ -6,12 +6,11 @@ const app = new Vue({
     },
     methods: {
         fetchAlbum(){
-            axios.get('http://localhost/php-ajax-dischi/php-ajax-dischi/seconda_versione/')
+            axios.get('http://localhost/php-ajax-dischi/php-ajax-dischi/seconda_versione/api.php')
             .then((res) =>{
-                
                 const { response } = res.data
                 this.albums = response
-                console.log(res.data)
+                
             }) 
         }
     },

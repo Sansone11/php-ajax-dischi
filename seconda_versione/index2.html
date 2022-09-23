@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src='https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js'></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js'></script>
     <link rel="stylesheet" href="../seconda_versione/style.css">
     <title>php-ajax-dischi_2</title>
@@ -12,18 +12,13 @@
 <body>
     <main id="app">
         <ul>
-            <li v-for="artist in albums">
-                <img src="" alt=""{{artist.poster}}}>
-                <h3>{{artist.title}}</h3>
-                <p>{{artist.author}}</p>
-                <p>{{artist.genre}}</p>
-                <p>{{artist.year}}</p>
+            <li v-for="album in albums":key="album">
+                <img src="{{album.poster}}" alt=""}>
+                <h3>{{album.title}}</h3>
+                <p>{{album.author}}</p>
+                <p>{{album.genre}}</p>
+                <p>{{album.year}}</p>
             </li>
-
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
         </ul>
 
     </main>
