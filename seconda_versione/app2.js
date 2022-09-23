@@ -1,6 +1,6 @@
 console.log('js ok')
 const app = new Vue({
-    el:'#app',
+    el:'#root',
     data:{
         albums : [],
     },
@@ -10,7 +10,7 @@ const app = new Vue({
             .then((res) =>{
                 const { response } = res.data
                 this.albums = response
-                
+                console.log(this.albums)
             }) 
         }
     },

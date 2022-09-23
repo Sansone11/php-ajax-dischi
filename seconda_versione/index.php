@@ -6,4 +6,4 @@ $data = [
     'resposnse'=>$albums
 ];
 
-echo json_encode($albums);
+json_encode($data);
