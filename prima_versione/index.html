@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../prima_versione/style2.css">
+    <script src='https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js'></script>
+
+    <title>php-ajax-dischi_1</title>
+</head>
+<body>
+  <main id="app">
+    <h1>{{album}}</h1>
+    <ul>
+      <li v-for="artist in  albums ">
+        <h3>{{artist.name}}</h3>
+        <p></p>
+        <p></p>
+        <p></p>       
+      </li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </main>
+    <!-- <template>
+        <div class="nav">
+          <div class="logo">
+            <img src="./spotify-icon-marilyn-scott-0.png" alt="">
+          </div>
+          <div class="text-center">
+            <select @change="$emit('musicGenre',options)" v-model="options">
+              <option default value="">Scegli il Tuo Genere Preferito</option>
+              <option value="Pop">Pop</option>
+              <option value="Rock">Rock</option>
+              <option value="Metal">Metal</option>
+              <option value="Jazz">Jazz</option>
+            </select>
+          </div>
+        </div>
+      </template>
+      <template>
+        <main>
+          <div class="card-wrapper ">
+            <div class="card " v-for="caracters, i in filterGenre" :key="i" style="width: 13rem; ">
+              <img :src="caracters.poster" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" :title="caracters.title">{{caracters.title}}</h5>
+                <p class="card-text">{{caracters.author}}</p>
+                <p class="year-text" :class="caracters.year">{{caracters.year}}</p>
+              </div>
+            </div>
+          </div>
+        </main>
+      </template>
+     -->
+     <script src="./app.js"></script>
+</body>
+</html>
