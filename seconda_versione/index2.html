@@ -13,10 +13,9 @@
     <main id="root">
         <ul>
             <li v-for="album in albums">
-                <img src="{{album.poster}}" alt=""}>
+                <img :src="{{album.poster}}" alt=""}>
                 <h3>{{album.title}}</h3>
                 <p>{{album.author}}</p>
-                <p>{{album.genre}}</p>
                 <p>{{album.year}}</p>
             </li>
         </ul>
