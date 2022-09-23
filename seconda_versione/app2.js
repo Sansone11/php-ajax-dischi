@@ -6,7 +6,7 @@ const app = new Vue({
     },
     methods: {
         fetchAlbum(){
-            axios.get('')
+            axios.get('http://localhost/php-ajax-dischi/php-ajax-dischi/seconda_versione/')
             .then((res) =>{
                 
                 const { response } = res.data
