@@ -1,59 +1,83 @@
-/* .nav {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,li,a{
+  text-decoration: none;
+  list-style: none;
+}
+.nav_bar {
     height: 70px;
     width: 100%;
-    background-color: $bg-card;
+    background-color:#2E3A46;
     display: flex;
     justify-content:space-between;
     align-items: center;
     padding-left: 20px;
     padding-right: 20px;
-  }
+}
   
-  .form-select{
-      background-color:$Wc--color ;
-      color: white;
-      font-weight: bold;
-    }
-  
-  .logo {}
-    img {
-      height: 50px;
-      width: 50px;
-    }
-    main{
-      background-color: $bg--color ;
+
+img {
+      height: 130px;
+      width: 130px;
+}
+
+.logo{
+  width: 50px;
+  height: 50px;
+}
+
+    
+main{
+      background-color: #1E2D3B;
       margin: 0 auto;
       padding: 40px 200px;
       min-height: 600px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr); 
+      display: flex;
+      align-content: center;
+      justify-content: center;
+    }
+
+    
+    .card_wrapper {
+      padding-top: 4rem;
+      background-color: #1E2D3B;
+      margin-bottom: 1rem;
+      text-align: center;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr); 
+      grid-gap:15px ;
+      padding-left: 5rem;
+      padding-right: 5rem;
+      height: 100%;
+      padding-bottom: 4rem;
+    
+     
+      
+    }
+
+    .card{
+      background-color:#2E3A46;
+      width: 180px;
+      height: 300px;
+      padding-top: 20px;
+    }
+
+    p {
+      color:#808080;
+  
     }
     
-    .card-wrapper {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-    
-      .card {
-        padding: 1rem;
-        background-color: $bg-card;
-        margin-bottom: 1rem;
-      }
-    
-      .card-text {
-        color: $Wc--color;
-        text-align: center;
-    
-      }
-    
-      .card-body{
-        padding: 2rem;
-      }
-    
-      .year-text {
-        color: $Wc--color;
-        text-align: center;
-    
-      }
-    
-      .card-title {
-        color: white;
-      }
-    } */
+    .card_body{
+      padding:10px;
+  
+    }
+    h3 {
+      color: white;
+      margin-bottom: 1rem;
+    }
