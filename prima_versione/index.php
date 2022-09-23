@@ -108,28 +108,28 @@
                 $title = $value['title'];
                 $year = $value['year'];
             ?>
-               <div class="card">
-               <img src="<?php
-                            echo  $poster
-                            ?>" alt="">
-                 <div class="card_body">           
-                <h3>
-                    <?php
-                    echo  $title
-                    ?>
-                </h3>
-                <p>
-                    <?php
-                    echo  $author
-                    ?>
-                </p>
-                <p>
-                    <?php
-                    echo  $year
-                    ?>
-                </p>
+                <div class="card">
+                    <img src="<?php
+                                echo  $poster
+                                ?>" alt="">
+                    <div class="card_body">
+                        <h3>
+                            <?php
+                            echo  $title
+                            ?>
+                        </h3>
+                        <p>
+                            <?php
+                            echo  $author
+                            ?>
+                        </p>
+                        <p>
+                            <?php
+                            echo  $year
+                            ?>
+                        </p>
 
-               </div>
+                    </div>
                 </div>
             <?php
             }

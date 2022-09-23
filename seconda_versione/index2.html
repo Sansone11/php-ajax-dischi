@@ -1,26 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src='https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js'></script>
-    <link rel="stylesheet" href="../seconda_versione/style.css">
+    <link rel="stylesheet" href="../prima_versione/style.css">
     <title>php-ajax-dischi_2</title>
 </head>
+
 <body>
+    <div class="container">
+        <div class="nav_bar">
+            <img class="logo" src="./Spotify_icon.png" alt="">
+        </div>
+    </div>
     <main id="root">
-        <ul>
-            <li v-for="album in albums">
-                <img :src="{{album.poster}}" alt=""}>
-                <h3>{{album.title}}</h3>
-                <p>{{album.author}}</p>
-                <p>{{album.year}}</p>
-            </li>
-        </ul>
+        <div class="main">
+            <div class="card_wrapper">
+                <div class="card">
+                    <ul>
+                        <li v-for="album in albums">
+                            <img :src="{{album.poster}}" alt="" }>
+                            <div class="card_body">
+                                <h3>{{album.title}}</h3>
+                                <p>{{album.author}}</p>
+                                <p>{{album.year}}</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
 
     </main>
     <script src="./app2.js"></script>
 </body>
+
 </html>
