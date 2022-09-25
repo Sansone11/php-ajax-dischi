@@ -1,8 +1,6 @@
 
 <?php
 
-header('Content-Type:application/json');
-json_encode($albums);
  $albums=[
      [ 
     'author'=>'Bon Jovi',
@@ -81,6 +79,7 @@ json_encode($albums);
     ],
 
     ];
+    
     
 ?>
     
