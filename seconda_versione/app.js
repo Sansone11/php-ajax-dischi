@@ -10,9 +10,7 @@ const app = new Vue({
             axios
             .get('http://localhost/php-ajax-dischi/php-ajax-dischi/seconda_versione/index.php')
             .then((res) =>{
-                const { response } = res.data;
-                console.log(res);
-                this.albums = response;
+                this.albums = res.data;
                 
                
             });

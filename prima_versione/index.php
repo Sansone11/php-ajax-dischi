@@ -101,11 +101,11 @@
     <div class="main">
         <div class="card_wrapper">
             <?php
-            foreach ($albums as $value) {
-                $author = $value['author'];
-                $genre = $value['genre'];
-                $poster = $value['poster'];
-                $title = $value['title'];
+             foreach ($albums as $value) {
+                 $author = $value['author'];
+                 $genre = $value['genre'];
+                 $poster = $value['poster'];
+                 $title = $value['title'];
                 $year = $value['year'];
             ?>
                 <div class="card">
@@ -126,7 +126,7 @@
                         <p>
                             <?php
                             echo  $year
-                            ?>
+                            ?> -->
                         </p>
 
                     </div>

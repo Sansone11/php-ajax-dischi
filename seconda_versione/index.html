@@ -11,19 +11,20 @@
     <title>php-ajax-dischi_2</title>
 </head>
 
-<body>
+<body >
+   <div id="root">
     <div class="container">
         <div class="nav_bar">
             <img class="logo" src="./Spotify_icon.png" alt="">
         </div>
     </div>
-    <main id="root">
+    <main>
         <div class="main">
             <div class="card_wrapper">
-                <div class="card">
-                    <ul>
-                        <li v-for="album in albums">
-                            <img :src="{{album.poster}}" alt="" >
+                <div v-for="album in albums" class="card">
+                    <ul >
+                        <li >
+                            <img :src="album.poster" alt="" >
                             <div class="card_body">
                                 <h3>{{album.title}}</h3>
                                 <p>{{album.author}}</p>
@@ -39,7 +40,9 @@
 
 
     </main>
-    <script src="./app2.js"></script>
+    
+   </div>
+   <script src="./app.js"></script>
 </body>
 
 </html>
